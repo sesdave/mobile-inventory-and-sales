@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+>
+
+	<ScrollView
+	    android:layout_width="match_parent"
+		android:layout_height="match_parent"
+    >
+		<LinearLayout
+		    android:layout_width="match_parent"
+			android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+		>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/color_44"
+                    android:textSize="24dp"
+                    android:text="@string/setting_general_title"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="40dp"
+                >
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:src="@drawable/img_line"-->
+                <!--android:scaleType="fitXY"-->
+                <!--/>-->
+                <TextView
+                    android:id="@+id/settings_debugmode"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/settings_advancemode"
+                    android:textSize="@dimen/textsize_general"
+                    android:textColor="#FF333333"
+                    android:drawableRight="@drawable/settings_check"
+                    android:drawablePadding="12dp"
+                    android:clickable="true"
+                    android:onClick="onClickDebugMode"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:src="@drawable/img_line"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--/>-->
+                <TextView
+                    android:id="@+id/settings_transactionshowuimore"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/settings_transui_showmore"
+                    android:textSize="@dimen/textsize_general"
+                    android:textColor="#FF333333"
+                    android:drawableRight="@drawable/settings_check"
+                    android:drawablePadding="12dp"
+                    android:clickable="true"
+                    android:onClick="onTransactionShowUIMore"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:src="@drawable/img_line"-->
+                <!--android:scaleType="fitXY"-->
+                <!--/>-->
+                <TextView
+                    android:id="@+id/settings_sendecho_connected"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/settings_sendecho_connected"
+                    android:textSize="@dimen/textsize_general"
+                    android:textColor="#FF333333"
+                    android:drawableRight="@drawable/settings_check"
+                    android:drawablePadding="12dp"
+                    android:clickable="true"
+                    android:onClick="onSendEchoWhenConnected"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="bottom"
+            >
+                <Button
+                    android:id="@+id/register_save_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/blue_login_roundcorner"
+                    android:textColor="@color/color_44"
+                    android:textSize="@dimen/textsize_general"
+                    android:text="@string/btn_save"
+                    android:onClick="onProcess"
+                    />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+		
+	</ScrollView>
+
+</LinearLayout>
+	    

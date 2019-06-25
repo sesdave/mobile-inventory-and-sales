@@ -1,0 +1,266 @@
+<resources>
+    <string name="app_name">PAY UP</string>
+
+    <string name="welcome">Welcome to PAYUP</string>
+
+    <string name="title_activity_webview">Web</string>
+
+    <string name="sale_button">Sale</string>
+
+
+    <string name="no_sale">No Sale</string>
+    <string name="new_product">Add new item</string>
+    <string name="transactionBack">Back</string>
+    <string name="cashTransaction">Cash Transaction</string>
+    <string name="cardTransaction">Card Transaction</string>
+    <string name="salestat"></string>
+    <string name="hint_email_address"></string>
+    <string name="supplier_email_title">Description</string>
+    <string name="supplier_phone_hint">e.g. +234 000-000-000</string>
+    <string name="hint_price_edit">This can be left blank to be inputed during Sales</string>
+    <string name="supplier_phone_title">Supplier Phone</string>
+    <string name="supplier_name_hint"></string>
+    <string name="supplier_name_title">Category</string>
+    <string name="quantity_title">Quantity</string>
+    <string name="price_title">Price</string>
+    <string name="product_name_title">Product Name</string>
+    <string name="currency_details">₦ / item</string>
+    <string name="action_save">Save item</string>
+    <string name="editor_activity_title_new_item">Add new item</string>
+    <string name="editor_activity_title_edit_item">Edit item</string>
+    <string name="menu_order_item">Order more</string>
+    <string name="menu_delete_item">Delete item</string>
+    <string name="menu_delete_all_data">Delete all data</string>
+    <string name="phone">Phone</string>
+    <string name="email">E-mail</string>
+    <string name="order_message">You can place an order for this item by phone or e-mail</string>
+    <string name="delete_message">Are you sure you want to procede with the deletion?</string>
+    <string name="delete">Accept</string>
+    <string name="empty_list_hinte">Click on button to start adding items to your inventory</string>
+    <string name="empty_list_hint">Start adding some items to your inventory</string>
+    <string name="action_add_dummy_data">Add Dummy Data</string>
+    <string name="select_image">Select image</string>
+    <string name="image">Image</string>
+    <string name="unsaved_changes_dialog_msg">There are unsaved changes in the product information. Do you want to continue?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep editing</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="charge">CHARGE</string>
+
+
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="filter">filter</string>
+    <string name="help">Good Woord</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_photos">Photos</string>
+    <string name="nav_movies">Movies</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about_us">About Us</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Photos</item>
+        <item>Movies</item>
+        <item>Notifications</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <string name="total">Total</string>
+    <string name="barcode">Barcode</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear">Clear</string>
+    <string name="edit">Edit</string>
+    <string name="confirm">Done</string>
+    <string name="prin">Print</string>
+    <string name="date">Date</string>
+    <string name="date_added">Date Added</string>
+    <string name="quantity">Quantity</string>
+    <string name="remove">Remove</string>
+    <string name="charge_sale">CHARGE ₦</string>
+    <string name="scan">Scan</string>
+    <string name="unit_price">Unit Price</string>
+    <string name="name">Name</string>
+    <string name="id">ID</string>
+    <string name="cash">Cash</string>
+    <string name="change">Change</string>
+    <string name="hint_search">Enter name or barcode</string>
+    <string name="hint_cash">Enter cash here</string>
+    <string name="add_new_product">Add New Product</string>
+    <string name="add_stock">Add A Product Lot</string>
+    <string name="previous">&lt;</string>
+    <string name="next">></string>
+    <string name="inventory">Inventory</string>
+    <string name="sale">Sale</string>
+    <string name="report">Report</string>
+
+    <string name="dialog_quit">Are you sure you want to QUIT?</string>
+    <string name="dialog_remove_product">Are you sure you want to REMOVE this product?</string>
+    <string name="dialog_clear_sale">Are you sure you want to CLEAR this sale?</string>
+    <string name="hint_empty_sale">Sale is empty.</string>
+    <string name="quit">Quit</string>
+    <string name="no">No</string>
+    <string name="product_detail">Product Detail</string>
+    <string name="stock">Stock</string>
+    <string name="success">Success</string>
+    <string name="fail">Fail</string>
+    <string name="please_input_all">Please fulfill all data.</string>
+    <string name="need_money">Need</string>
+
+
+    <string name="lang_en">English</string>
+    <string name="lang_th">ภาษาไทย (th)</string>
+    <string name="lang_jp">日本語 (jp)</string>
+    <string name="hint_lang">Please restart the application to apply this language settings.</string>
+
+
+    <string-array name="period">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+
+    <style name="ButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <string name="title_activity_invoice_page">InvoicePage</string>
+    <string name="title_activity_transaction_page">TransactionPage</string>
+    <string name="confirm_payment">CONFIRM PAYMENT</string>
+    <string name="back">Back</string>
+
+
+    <!-- Setting -->
+    <!-- Setting View -->
+
+    <string name="english_en">English (en)</string>
+    <string name="chinese_zh">Chinese (zh)</string>
+
+    <string name="setting_general_title">Setting - General</string>
+    <string name="setting_language_title">Setting - Language</string>
+    <string name="setting_t1000device_title">Setting - T1000 Device</string>
+    <string name="setting_sp530device_title">Setting - SP530 Device</string>
+    <string name="setting_sp530sslcert_title">Setting - SP530 SSL Certificate</string>
+    <string name="setting_transaction_title">Setting - Transaction</string>
+    <string name="setting_transactionmutuauth_title">Setting - Transaction (Mutual Authentication)</string>
+    <string name="setting_bluetoothprinter_title">Setting - Bluetooth Printer</string>
+    <string name="setting_bluetoothprinterimage_title">Setting - Bluetooth Printer Image</string>
+
+    <string name="settings_advancemode">Advance Mode</string>
+    <string name="settings_trans_simulatetcphost">Simulate TCP Host\n(for RAW Packet Encapsulate Level)</string>
+    <string name="settings_transui_showmore">Transaction UI Show More</string>
+    <string name="settings_sendecho_connected">Send Echo When Connected</string>
+
+    <string name="settings_device_alwaysusecrc">Always use CRC Checksum</string>
+    <string name="settings_device_sslchannel">Enable SSL</string>
+    <string name="settings_device_sslchanneltwo">SSL - Logical Channel Two</string>
+
+    <string name="settings_btprinter_enable">Enable Bluetooth Printer</string>
+
+    <!-- Cache -->
+    <string name="clear_cache_before7days_finish">Finish clearing -7 days histories</string>
+    <string name="clear_cache_finish">Finish clearing all histories</string>
+
+    <!--S3-Auth-->
+    <string name="s3auth_sptl3authkey_title">Spt L3 - AuthKey</string>
+    <string name="s3auth_sptl3authkey_mrmk">MRMK</string>
+    <string name="s3auth_sptl3authkey_rmk">RMK</string>
+
+    <!--S3-Template-->
+    <string name="s3template_filelist_url">.ptl file list url</string>
+    <string name="s3template_filelist_path">.ptl file list path</string>
+
+    <string name="s3auth_sptl3internaldata_title">Spt L3 -InternalData</string>
+
+    <!--Device-->
+    <string name="frag_device_title">Device</string>
+
+    <string name="title_printer_gen_img">PRINTER - Generate Image</string>
+
+    <string name="t1000_ipaddress">T1000 IP Address</string>
+    <string name="t1000_port_wrange">T1000 Port (Range: 1025 - 65535)</string>
+    <string name="connection_timeout_second">Connection Timeout (Seconds)</string>
+    <string name="p12cert_select_short">p12 Cert. Select</string>
+    <string name="ch1_p12cert_select_short">Channel 1, p12 Cert. Select</string>
+    <string name="no_p12_file_found">No p12 File Found</string>
+    <string name="cert_pwd_short_wcolon">Cert. Password:</string>
+    <string name="ca_client_auth">Client Auth.</string>
+    <string name="ca_cert_select_short">CA Cert. (pem format) Select</string>
+    <string name="no_pem_file_found">No pem File Found</string>
+    <string name="extra_tlv">Extra TLV</string>
+    <string name="max_trans_in_batch_mode">Maximum Transaction in Batch Mode</string>
+    <string name="please_click_initauth_first">Please Click \"Init Auth\" First</string>
+    <string name="btn_init_mode">Init Mode</string>
+    <string name="btn_init_auth">Init Auth</string>
+    <string name="btn_muth_auth">Mutu AUth</string>
+    <string name="btn_gen_key">Gen Key</string>
+    <string name="btn_toggle_filelist_controller">Toggle File List Controller</string>
+    <string name="launch_dl_files">Launch Download Files</string>
+    <string name="tms_list_file">TMS List File</string>
+    <string name="dl_tms_files">Download TMS files</string>
+    <string name="transfer_tms_sp530">Transfer TMS to SP530</string>
+    <string name="transfer_data_sp530">Transfer Data to SP530</string>
+    <string name="transfer_file_sp530">Transfer File to SP530</string>
+    <string name="result_last_transfer_tms">Result of Last Transfer TMS</string>
+    <string name="tms_file_list">TMS File List</string>
+    <string name="tms_list_file_notexist_pls_dl_it">TMS List File not Exist, Please Download it</string>
+    <string name="data_list_file_notexist_pls_dl_it">Data List File not Exist, Please Download it</string>
+    <string name="tms_list_file_empty">TMS List File Empty</string>
+    <string name="data_list_file_empty">Data List File Empty</string>
+    <string name="data_file_list">Data File List</string>
+    <string name="file_list_url">File List URL</string>
+    <string name="no_data_files_in_list">No Data Files in List</string>
+    <string name="no_tms_files_in_list">No TMS Files in List</string>
+    <string name="no_tms_files_in_download_list">No TMS Files in Download List</string>
+    <string name="no_data_files_in_download_list">No Data Files in Download List</string>
+    <string name="dl_tmsfiles">Download TMS Files</string>
+    <string name="qr_scan">QR Scan</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="start_batch_transactions">Start Batch Transactions</string>
+    <string name="start_transaction">Start Transaction</string>
+    <string name="demo_transaction_receipt">Demo - Transaction Receipt</string>
+    <string name="bluetooth_printer_manage">Bluetooth Printer Manage</string>
+    <string name="refresh_bt_io">Refresh Bluetooh IO</string>
+    <string name="test_printer">Test Printer</string>
+    <string name="connect_ble">Connect BLE</string>
+    <string name="start_mfg_info_print">Start MFG info. Print</string>
+    <string name="stop_mfg_info_print">Stop MFG info. Print</string>
+    <string name="channel_one">Channel One</string>
+    <string name="channel_two">Channel Two</string>
+    <string name="enable_ssl">Enable SSL</string>
+    <string name="set_mcp_config">Set MCP Config</string>
+    <string name="input_command_hex_wcolon">Input Command (HEX):</string>
+    <string name="input_data_hex">Input Data (HEX):</string>
+    <string name="s3ins_response_data_from_fngetresponse">S3INS Response Data (from function getS3INSResponseObject)</string>
+
+    <string name="settings_btsecurerfcomm_enable">Secure Bluetooth Connection</string>
+</resources>

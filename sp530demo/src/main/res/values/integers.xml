@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="max_input_amount_digits">12</integer>
+    <integer name="max_input_amount_characters">13</integer>
+
+    <integer name="s3auth_sptl3authkey_maxlength">32</integer>
+    <integer name="s3auth_sptl3internaldata_maxlength">32</integer>
+    <integer name="s3auth_sptl3internaldata_trand_maxlength">16</integer>
+    <integer name="s3auth_sptl3internaldata_rrand_maxlength">16</integer>
+
+    <integer name="s3template_filelisturl_maxlength">512</integer>
+</resources>

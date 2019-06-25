@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_top_small"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text="@string/load_img"
+                android:onClick="onClick_loadimage"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text="@string/gen_print_img_short"
+                android:onClick="onClick_generateimage"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:text="@string/bluetooth_printer"
+                android:onClick="onClick_manageprinter"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text="@string/print"
+                android:onClick="onClick_print"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text="@string/ul_flsh_0_short"
+                android:onClick="onClick_uploadflashzero"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text="@string/ul_flsh_1_short"
+                android:onClick="onClick_uploadflashone"
+                />
+            <!--<Button-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textSize="14sp"-->
+                <!--android:text="U/L Ram"-->
+                <!--android:onClick="onClick_uploadram"-->
+                <!--/>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text="@string/print_flsh_0"
+                android:onClick="onClick_printflashzero"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text="@string/print_flsh_1"
+                android:onClick="onClick_printflashone"
+                />
+            <!--<Button-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textSize="14sp"-->
+                <!--android:text="Print Ram"-->
+                <!--android:onClick="onClick_printram"-->
+                <!--/>-->
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_top_small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/color_44"
+                    android:textSize="@dimen/textsize_general"
+                    android:text="@string/threshold_value_wcolon"
+                    />
+                <TextView
+                    android:id="@+id/threshold_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/color_44"
+                    android:textSize="@dimen/textsize_general"
+                    android:text="127"
+                    />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/threshold_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="255"
+                android:progress="127"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_top_general" />
+
+        <com.spectratech.sp530demo.view.CustomLinearLayoutWithMeasureWH
+            android:id="@+id/container_orgimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/orgimg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_dd"
+                />
+        </com.spectratech.sp530demo.view.CustomLinearLayoutWithMeasureWH>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_top_small" />
+
+        <com.spectratech.sp530demo.view.CustomLinearLayoutWithMeasureWH
+            android:id="@+id/container_printimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/printimg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_dd"
+                />
+        </com.spectratech.sp530demo.view.CustomLinearLayoutWithMeasureWH>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

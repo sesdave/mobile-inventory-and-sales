@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transaction_receipt_signature_bg"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/transaction_signature_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:background="#FFFFFFFF"
+            >
+            <com.spectratech.lib.view.DrawableLinearLayout
+                android:id="@+id/transaction_signature_drawable_signature"
+                android:layout_width="@dimen/width_drawable_signature"
+                android:layout_height="@dimen/height_drawable_signature"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_signname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/transaction_signature_container"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/margin_right_smaller"
+            android:textSize="@dimen/textsize_general"
+            android:textColor="#FFFF0000"
+            android:text="@string/transaction_receipt_text_signname"
+            />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_margin="@dimen/margin_left_smaller"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/blue_login_selector"
+            android:textColor="@color/color_44"
+            android:text="@string/btn_ok"
+            android:textSize="28sp"
+            android:onClick="onProcess"
+            />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_margin="@dimen/margin_left_smaller"
+            android:layout_toRightOf="@id/btn_ok"
+            android:background="@drawable/blue_login_selector"
+            android:textColor="@color/color_44"
+            android:text="@string/btn_cancel"
+            android:textSize="28sp"
+            android:onClick="onCancel"
+            />
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/margin_left_smaller"
+            android:background="@drawable/blue_login_selector"
+            android:textColor="@color/color_44"
+            android:text="@string/btn_clear"
+            android:textSize="28sp"
+            android:onClick="onClear"
+            />
+
+        <LinearLayout
+            android:id="@+id/transaction_amount_container"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_marginRight="@dimen/margin_left_small"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:textSize="@dimen/textsize_large"
+                android:textColor="@color/color_44"
+                android:text="@string/transaction_text_amount_with_colon"
+                />
+            <View
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                />
+            <LinearLayout
+                android:id="@+id/transaction_amount_value_container"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/transaction_amount_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:textSize="@dimen/textsize_large"
+                    android:textColor="@color/color_44"
+                    android:text="$"
+                    />
+                <TextView
+                    android:id="@+id/transaction_amount_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:textSize="@dimen/textsize_large"
+                    android:textColor="@color/color_44"
+                    android:text=""
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_signname_caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/transaction_amount_container"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:textSize="@dimen/textsize_large"
+            android:textColor="#FFFF0000"
+            android:text=""
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

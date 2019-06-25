@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <ViewAnimator
+        android:id="@+id/twoviews_viewanimator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ScrollView
+            android:id="@+id/sv_s3template_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_left_smaller"
+            android:layout_marginRight="@dimen/margin_right_smaller"
+            android:fillViewport="true"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:id="@+id/btn_controller_conf_files_toggle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/color_44"
+                    android:textSize="@dimen/textsize_fontsizetwelve"
+                    android:singleLine="true"
+                    android:text="@string/btn_toggle_filelist_controller"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/controller_conf_files"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/text_filelist_url"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize_general"
+                    android:textColor="@color/color_44"
+                    android:text="@string/s3template_filelist_url"
+                    />
+
+                <com.spectratech.lib.view.SingleLineEditText
+                    android:id="@+id/s3template_input_filelisturl_val"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_s3auth_inputfield_minusten"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/color_44"
+                    android:textSize="@dimen/textsize_large"
+                    android:hint=""
+                    android:textColorHint="@color/userinfo_hint_color"
+                    android:background="#FFF0F0F0"
+                    android:singleLine="true"
+                    android:maxLength="@integer/s3template_filelisturl_maxlength"
+                    android:text=""
+                    android:includeFontPadding="false"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <Button
+                        android:id="@+id/btn_filelisturl_default"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/color_44"
+                        android:textSize="@dimen/textsize_fontsizetwelve"
+                        android:singleLine="true"
+                        android:text="@string/default_url"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_filelisturl_clear"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_toLeftOf="@id/btn_filelisturl_default"
+                        android:textColor="@color/color_44"
+                        android:textSize="@dimen/textsize_fontsizetwelve"
+                        android:singleLine="true"
+                        android:text="@string/btn_clear"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <Button
+                        android:id="@+id/btn_filelist_get"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_44"
+                        android:textSize="@dimen/textsize_fontsizetwelve"
+                        android:singleLine="true"
+                        android:text="@string/get_file_list"
+                        />
+                    <Button
+                        android:id="@+id/btn_files_download"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_44"
+                        android:textSize="@dimen/textsize_fontsizetwelve"
+                        android:singleLine="true"
+                        android:text="@string/launch_dl_files"
+                        />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/list_filelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                </ListView>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/img_line"
+                android:scaleType="fitXY"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:id="@+id/btn_refresh"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/color_44"
+                    android:textSize="@dimen/textsize_fontsizetwelve"
+                    android:singleLine="true"
+                    android:text="@string/refresh"
+                    />
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/color_44"
+                    android:textSize="@dimen/textsize_fontsizetwelve"
+                    android:singleLine="true"
+                    android:text="@string/send"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:id="@+id/text_ptl_file_path"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left|center_vertical"
+                            android:textSize="@dimen/textsize_fontsizetwelve"
+                            android:textColor="@color/color_44"
+                            android:text="@string/s3template_filelist_path"
+                            />
+                        <TextView
+                            android:id="@+id/tv_ptl_file_count"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginRight="@dimen/margin_right_smaller"
+                            android:gravity="right|center_vertical"
+                            android:textSize="@dimen/textsize_fontsizetwelve"
+                            android:textColor="@color/color_44"
+                            android:text=""
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_ptl_file_path_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="left|center_vertical"
+                        android:textSize="@dimen/textsize_fontsizetwelve"
+                        android:textColor="@color/color_44"
+                        android:text=""
+                        android:textIsSelectable="true"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:textColor="@color/color_44"
+                            android:textSize="@dimen/textsize_general"
+                            android:text="Type:"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/login_roundcorner_focus"
+                            >
+                            <TextView
+                                android:id="@+id/tv_conf_inputfile"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="24dp"
+                                android:gravity="center_vertical|left"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textColor="@color/color_44"
+                                android:textSize="18sp"
+                                android:hint="@string/please_select"
+                                android:textColorHint="@color/userinfo_hint_color"
+                                android:background="#00000000"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:drawableRight="@drawable/img_dropdownmenu_arrow"
+                                android:drawablePadding="10dp"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:textColor="@color/color_44"
+                            android:textSize="@dimen/textsize_general"
+                            android:text="INS:"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:paddingLeft="10dp"
+                            >
+                            <EditText
+                                android:id="@+id/tv_conf_inputins"
+                                android:layout_width="40dp"
+                                android:layout_height="@dimen/height_s3auth_inputfield_minusten"
+                                android:gravity="center"
+                                android:background="#FFF0F0F0"
+                                android:singleLine="true"
+                                android:maxLength="2"
+                                android:textSize="@dimen/textsize_general"
+                                android:textColor="@color/color_44"
+                                android:text=""
+                                android:enabled="false"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:textColor="@color/color_44"
+                            android:textSize="@dimen/textsize_general"
+                            android:text="Item:"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/login_roundcorner_focus"
+                            >
+                            <TextView
+                                android:id="@+id/tv_conf_inputitem"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="24dp"
+                                android:gravity="center_vertical|left"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textColor="@color/color_44"
+                                android:textSize="18sp"
+                                android:hint="@string/please_select"
+                                android:textColorHint="@color/userinfo_hint_color"
+                                android:background="#00000000"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:drawableRight="@drawable/img_dropdownmenu_arrow"
+                                android:drawablePadding="10dp"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:textColor="@color/color_44"
+                            android:textSize="@dimen/textsize_general"
+                            android:text="Goto:"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:paddingLeft="10dp"
+                            >
+                            <EditText
+                                android:id="@+id/tv_conf_inputgoto"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_s3auth_inputfield_minusten"
+                                android:gravity="left|center_vertical"
+                                android:background="#FFF0F0F0"
+                                android:singleLine="true"
+                                android:textSize="@dimen/textsize_general"
+                                android:textColor="@color/color_44"
+                                android:text=""
+                                android:enabled="false"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center_vertical"
+                            android:textColor="@color/color_44"
+                            android:textSize="@dimen/textsize_general"
+                            android:text="@string/data"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            >
+                            <EditText
+                                android:id="@+id/tv_conf_inputdata"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="@dimen/height_s3auth_inputfield_minusten"
+                                android:gravity="left|center_vertical"
+                                android:background="#FFF0F0F0"
+                                android:textSize="@dimen/textsize_fontsizetwelve"
+                                android:textColor="@color/color_44"
+                                android:text=""
+                                android:enabled="false"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/img_line"
+                    android:scaleType="fitXY"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/text_sptl3_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:textSize="@dimen/textsize_general"
+                        android:textColor="@color/color_44"
+                        android:text="Spt L3 - Data"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_rawdata"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:minHeight="@dimen/height_s3auth_inputfield_minusten"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="left|center_vertical"
+                        android:background="#FFF0F0F0"
+                        android:textSize="@dimen/textsize_fontsizetwelve"
+                        android:textColor="@color/color_44"
+                        android:text=""
+                        android:textIsSelectable="true"
+                        />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:id="@+id/btn_logview"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/color_44"
+                    android:textSize="@dimen/textsize_fontsizetwelve"
+                    android:singleLine="true"
+                    android:text="@string/cancel"
+                    />
+            </LinearLayout>
+            <ScrollView
+                android:id="@+id/sv_activity_log"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:id="@+id/tv_activity_log"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:freezesText="true"
+                    android:padding="10px"
+                    android:textIsSelectable="true" />
+
+            </ScrollView>
+        </LinearLayout>
+
+    </ViewAnimator>
+
+</LinearLayout>

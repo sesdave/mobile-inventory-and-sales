@@ -1,0 +1,329 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.spectratech.sp530demo"
+    >
+
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--required by os 6.0 for bluetooth works-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!--permission used for zxing barcode scanner-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/refresh_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/refresh_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreenActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".inventory.ProductDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sale.SaleDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrivacyPolicyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReportPage"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ItemPage"
+            android:label="Inventory">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:screenOrientation="portrait"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".AddItems"
+            android:label="@string/new_product">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:screenOrientation="portrait"
+                android:value=".ItemPage" />
+        </activity>
+        <activity
+            android:name=".InvoicePage"
+            android:label="@string/title_activity_invoice_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TransactionPage"
+            android:label="@string/title_activity_transaction_page"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".DemoMainActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+
+            >
+        </activity>
+
+        <activity
+            android:name=".SP530DemoBluetoothConnectActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            >
+        </activity>
+
+        <activity
+            android:name=".BTPrinterBluetoothConnectActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            >
+        </activity>
+
+        <activity
+            android:name=".BTPrinterGenerateImageActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            >
+        </activity>
+
+        <activity
+            android:name=".SettingActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            >
+        </activity>
+
+        <activity
+            android:name=".WebViewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity
+            android:name=".WebViewFullScnActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+        <activity
+            android:name=".SettingTransactionActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            >
+        </activity>
+
+        <activity
+            android:name=".SettingTransactionMutuAuthActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            >
+        </activity>
+
+        <activity
+            android:name=".TransSummaryActivity"
+            android:label="@string/app_name"
+            >
+        </activity>
+
+        <activity
+            android:name=".TransSummaryDetailActivity"
+            android:label="@string/app_name"
+            >
+        </activity>
+
+        <activity
+            android:name=".ViewLogActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            >
+        </activity>
+
+        <activity
+            android:name=".TransReceiptActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            >
+        </activity>
+
+        <activity
+            android:name=".TransReceiptTouchImageViewSingleActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            >
+        </activity>
+
+        <activity
+            android:name=".SettingDeviceSP530Activity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            >
+        </activity>
+
+        <activity
+            android:name=".SettingSP530SSLCertActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            >
+        </activity>
+
+        <activity
+            android:name=".SettingDeviceBTPrinterActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            >
+        </activity>
+
+        <activity
+            android:name=".TransReceiptSignatureActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            >
+        </activity>
+
+        <activity
+            android:name=".SettingGeneralActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            >
+        </activity>
+
+        <activity
+            android:name=".SettingLanguageActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            >
+        </activity>
+
+        <!--for debug-->
+        <!--<activity-->
+        <!--android:name=".DebugActivity"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:label="@string/debug"-->
+        <!-->-->
+        <!--</activity>-->
+
+        <!-- for testing -->
+        <activity
+            android:name=".test.TestBluetoothLEActivity"
+            android:label="TestBluetoothLE"
+            >
+        </activity>
+        <activity
+            android:name=".test.TestLoopbackActivity"
+            android:label="TestLoopback"
+            >
+        </activity>
+        <activity
+            android:name=".test.TestLoopbackClientActivity"
+            android:label="TestLoopbackClient"
+            >
+        </activity>
+        <activity
+            android:name=".test.TestLoopbackServerActivity"
+            android:label="TestLoopbackServer"
+            >
+        </activity>
+        <activity
+            android:name=".test.TestQRReadActivity"
+            android:label="TestQRReadActivity"
+            >
+        </activity>
+
+
+        <activity
+            android:name=".DeviceSelectActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            >
+        </activity>
+
+
+        <!--T1000-->
+        <activity
+            android:name=".SettingDeviceT1000Activity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            >
+        </activity>
+
+        <activity
+            android:name=".T1000DemoSocketConnectActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            >
+        </activity>
+
+        <!--QR Code capture activity-->
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:screenOrientation="landscape"
+            android:stateNotNeeded="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SP530DemoFilesDownloadActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+        <activity
+            android:name="com.spectratech.spectratechlib_ftp.ShowFilePathStringListListViewActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+
+
+    </application>
+
+
+</manifest>

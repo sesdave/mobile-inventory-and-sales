@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/view_s3logoverlay"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_logview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/color_44"
+            android:textSize="@dimen/textsize_fontsizetwelve"
+            android:singleLine="true"
+            android:text="@string/cancel"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_activity_log_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#00b000"
+            android:textSize="@dimen/textsize_fontsizefourteen"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text=""
+            />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/sv_activity_log"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/tv_activity_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_44"
+            android:textSize="@dimen/textsize_fontsizetwelve"
+            android:freezesText="true"
+            android:textIsSelectable="true"
+            />
+    </ScrollView>
+
+</LinearLayout>

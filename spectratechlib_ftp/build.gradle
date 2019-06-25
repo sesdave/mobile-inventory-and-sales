@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0.0"
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+}
+
+repositories {
+    flatDir {
+        dirs '../libs/'
+
+//        dirs '../libs/',
+//                '../../ANDROID_LIB_SPECTRATECH/spectratechlib/build/outputs/aar/'
+    }
+}
+
+dependencies {
+
+    implementation(name:'spectratechlib-release', ext:'aar')
+    //implementation files('libs/android-integration-2.0-supportv4.jar')
+
+    implementation project(':spectratechlib_ftpprivate')
+    implementation 'commons-net:commons-net:3.4'
+
+
+}

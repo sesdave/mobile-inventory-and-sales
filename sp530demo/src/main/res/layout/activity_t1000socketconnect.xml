@@ -1,0 +1,88 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#AA000000"
+    android:onClick="onClick_translucent"
+>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    android:background="#FFFFFFFF"
+    android:onClick="onClick_noeffect"
+    >
+
+    <include layout="@layout/header_wificonnect" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_left_general"
+        android:paddingTop="5dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_44"
+            android:textSize="18sp"
+            android:text="@string/status_wcolon"
+            />
+        <TextView
+            android:id="@+id/tv_btStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_44"
+            android:text="-"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/view_socketconnect_panel" />
+
+    <include layout="@layout/view_message_singleline_row" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:textColor="@color/color_44"
+                android:textSize="18sp"
+                android:text="@string/local_ip_wcolon"
+                />
+            <TextView
+                android:id="@+id/param_local_ip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:textColor="@color/color_44"
+                android:textSize="18sp"
+                android:text=""
+                />
+        </LinearLayout>
+
+        <include layout="@layout/view_socket_info" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

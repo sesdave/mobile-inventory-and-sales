@@ -1,0 +1,50 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#AA000000"
+    android:onClick="onClick_translucent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:background="#FFFFFFFF"
+        android:onClick="onClick_noeffect"
+        >
+
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </ListView>
+
+        <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:orientation="vertical"-->
+                <!-->-->
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_msg"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:textSize="@dimen/textsize_fontsizetwelve"-->
+                    <!--android:textColor="@color/color_44"-->
+                    <!--android:textIsSelectable="true"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
+        <!--</ScrollView>-->
+
+    </LinearLayout>
+</LinearLayout>

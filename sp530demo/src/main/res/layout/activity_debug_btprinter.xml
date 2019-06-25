@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="@string/bluetooth_printer_manage"
+        android:onClick="onClick_manageprinter"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="@string/refresh_bt_io"
+        android:onClick="onCLick_refreshIO"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="@string/test_printer"
+        android:onClick="onClick_testprinter"
+        />
+
+    <ImageView
+        android:id="@+id/input_iv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/bluetooth_enabled_128px"
+        />
+
+    <EditText
+        android:id="@+id/input_et"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_cc"
+        android:gravity="top|left"
+        />
+
+</LinearLayout>

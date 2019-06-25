@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spectratech.sp530demo.view.ViewTransreceiptLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/transaction_receipt_controller_container"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            android:background="#80FFFFFF"
+            >
+            <LinearLayout
+                android:id="@+id/transaction_receipt_btn_container"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:clickable="true"
+                >
+                <Button
+                    android:id="@+id/transaction_receipt_ok"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize_fontsizefourteen"
+                    android:text="@string/ok"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/transaction_receipt_btn_zoom_container"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/transaction_receipt_btn_container"
+                android:gravity="center"
+                android:clickable="true"
+                >
+                <Button
+                    android:id="@+id/transaction_receipt_zoom"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize_fontsizefourteen"
+                    android:text="@string/zoom"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/transaction_receipt_btn_toggleview_container"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/transaction_receipt_btn_zoom_container"
+                android:gravity="center"
+                android:clickable="true"
+                >
+                <Button
+                    android:id="@+id/transaction_receipt_toggleview"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize_fontsizefourteen"
+                    android:text="@string/toggle_view"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/transaction_receipt_btn_printview_container"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/transaction_receipt_btn_toggleview_container"
+                android:gravity="center"
+                android:clickable="true"
+                >
+                <Button
+                    android:id="@+id/transaction_receipt_printview"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize_fontsizefourteen"
+                    android:text="@string/print"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/transaction_receipt_share_container"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:clickable="true"
+                >
+                <ImageView
+                    android:id="@+id/transaction_receipt_share"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/btn_share_on"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#FFC0C0C0"
+            android:layout_below="@id/transaction_receipt_controller_container"
+            >
+            <ScrollView
+                android:id="@+id/sv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:id="@+id/transaction_receipt_blue_container_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+                    <!--<include layout="@layout/transaction_receipt_blue_double" />-->
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.spectratech.sp530demo.view.ViewTransreceiptLinearLayout>

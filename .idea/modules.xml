@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PayUpmain.iml" filepath="$PROJECT_DIR$/PayUpmain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bp80demo/bp80demo.iml" filepath="$PROJECT_DIR$/bp80demo/bp80demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bp80mfgtest/bp80mfgtest.iml" filepath="$PROJECT_DIR$/bp80mfgtest/bp80mfgtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.google.zxing.client.android.captureactivity/com.google.zxing.client.android.captureactivity.iml" filepath="$PROJECT_DIR$/com.google.zxing.client.android.captureactivity/com.google.zxing.client.android.captureactivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons-net-3.4/commons-net-3.4.iml" filepath="$PROJECT_DIR$/commons-net-3.4/commons-net-3.4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sp530demo/sp530demo.iml" filepath="$PROJECT_DIR$/sp530demo/sp530demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spectratechlib_ftp/spectratechlib_ftp.iml" filepath="$PROJECT_DIR$/spectratechlib_ftp/spectratechlib_ftp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spectratechlib_ftpprivate/spectratechlib_ftpprivate.iml" filepath="$PROJECT_DIR$/spectratechlib_ftpprivate/spectratechlib_ftpprivate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sptunnelapp/sptunnelapp.iml" filepath="$PROJECT_DIR$/sptunnelapp/sptunnelapp.iml" />
+    </modules>
+  </component>
+</project>

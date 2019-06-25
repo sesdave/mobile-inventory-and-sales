@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ViewAnimator
+        android:id="@+id/views_viewanimator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <!--first-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/margin_left_small"
+                android:paddingRight="@dimen/margin_right_small"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:textColor="@color/color_44"
+                        android:textSize="@dimen/fontsize_setting_params"
+                        android:text="@string/select_file"
+                        />
+                    <TextView
+                        android:id="@+id/tv_file_path"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="bottom"
+                        android:textSize="@dimen/textsize_fontsizetwelve"
+                        android:textColor="@color/color_44"
+                        android:text=""
+                        />
+                    <TextView
+                        android:id="@+id/tv_file_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="bottom"
+                        android:textSize="@dimen/textsize_fontsizetwelve"
+                        android:textColor="@color/color_44"
+                        android:text=""
+                        />
+
+                    <Button
+                        android:id="@+id/btn_tmsfiles_download"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_44"
+                        android:textSize="@dimen/fontsize_setting_params"
+                        android:text="@string/select_file"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_transfertms2device"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_44"
+                        android:textSize="@dimen/fontsize_setting_params"
+                        android:text="@string/transfer_file_sp530"
+                        />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="20dp" />
+
+                </LinearLayout>
+            </ScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#FFD0D0D0"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_44"
+                    android:textSize="12dp"
+                    android:text="@string/log"
+                    />
+                <ScrollView
+                    android:id="@+id/sv_brief_log"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <TextView
+                        android:id="@+id/tv_brief_log"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_44"
+                        android:textSize="@dimen/textsize_fontsizetwelve"
+                        android:freezesText="true"
+                        android:textIsSelectable="true"
+                        />
+                </ScrollView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--second-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            >
+            <include layout="@layout/view_tmsdownloadfragment_log" />
+        </LinearLayout>
+
+
+
+    </ViewAnimator>
+
+</LinearLayout>

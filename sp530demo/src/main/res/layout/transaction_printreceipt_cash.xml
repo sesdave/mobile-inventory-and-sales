@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spectratech.sp530demo.TransactionPrintReceiptLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/transaction_printreceipt_container"
+    android:layout_width="@dimen/transaction_printreceipt_width_double"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/transaction_printreceipt"
+        android:layout_width="@dimen/transaction_printreceipt_width_double"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/transaction_printreceipt_bg"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/transaction_printreceipt_margin_general_double"
+            android:layout_marginRight="@dimen/transaction_printreceipt_margin_general_double"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/transaction_printreceipt_row_height1_double"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/transaction_printreceipt_padding_smaller_double"
+                />
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/transaction_printreceipt_row_height2_double"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:orientation="vertical"-->
+            <!--android:paddingTop="@dimen/transaction_printreceipt_padding_smaller_double"-->
+            <!-->-->
+            <!--<com.spectratech.lib.view.HKFontTextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="right|top"-->
+            <!--android:gravity="right|top"-->
+            <!--android:textColor="@color/transaction_printreceipt_printtext"-->
+            <!--android:textSize="@dimen/transaction_printreceipt_textsize_general_double"-->
+            <!--android:text="@string/cardholdercopy"-->
+            <!--/>-->
+            <!--</LinearLayout>-->
+
+            <ImageView
+                android:layout_width="@dimen/transaction_printreceipt_row_width3_double"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:src="@drawable/receipt"
+                android:adjustViewBounds="true"
+                />
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="@dimen/transaction_printreceipt_row_width3_double"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_marginTop="-10px"-->
+            <!-->-->
+            <!--<com.spectratech.lib.view.HKFontTextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/transaction_printreceipt_printtext"-->
+            <!--android:textSize="@dimen/transaction_printreceipt_textsize_large_double"-->
+            <!--android:text="@string/spectra_name_short_withspace"-->
+            <!--/>-->
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/transaction_printreceipt_padding_smallest_double" />-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="@dimen/transaction_printreceipt_row_width3_double"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:orientation="vertical"-->
+            <!-->-->
+            <!--<com.spectratech.lib.view.HKFontTextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/transaction_printreceipt_printtext"-->
+            <!--android:textSize="@dimen/transaction_printreceipt_textsize_littlemore_double"-->
+            <!--android:text="@string/spectra_name_detail"-->
+            <!--/>-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="@dimen/transaction_printreceipt_row_width3_double"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:orientation="vertical"-->
+            <!-->-->
+            <!--<com.spectratech.lib.view.HKFontTextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/transaction_printreceipt_printtext"-->
+            <!--android:textSize="@dimen/transaction_printreceipt_textsize_littlemore_double"-->
+            <!--android:text="@string/machine_test"-->
+            <!--/>-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="@dimen/transaction_printreceipt_row_width3_double"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:orientation="vertical"-->
+            <!-->-->
+            <!--<com.spectratech.lib.view.HKFontTextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/transaction_printreceipt_printtext"-->
+            <!--android:textSize="@dimen/transaction_printreceipt_textsize_littlemore_double"-->
+            <!--android:text="@string/visa_eps_and_etc"-->
+            <!--/>-->
+            <!--</LinearLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/transaction_printreceipt_padding_general_double" />
+
+            <!--MID-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="@dimen/transaction_printreceipt_row_width4_double"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <com.spectratech.lib.view.HKFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="left"
+                        android:textColor="@color/transaction_printreceipt_printtext"
+                        android:textSize="@dimen/transaction_printreceipt_textsize_littlemore_double"
+                        android:text="@string/transaction_printreceipt_mid"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/transaction_printreceipt_padding_smallest_double"
+                    android:orientation="horizontal"
+                    >
+                    <com.spectratech.lib.view.HKFontTextView
+                        android:id="@+id/val_mid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="right"
+                        android:textColor="@color/transaction_printreceipt_printtext"
+                        android:textSize="@dimen/transaction_printreceipt_textsize_littlemore_double"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:text="@string/transaction_printreceipt_val_default"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--TID-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="@dimen/transaction_printreceipt_row_width4_double"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <com.spectratech.lib.view.HKFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="left"
+                        android:textColor="@color/transaction_printreceipt_printtext"
+                        android:textSize="@dimen/transaction_printreceipt_textsize_littlemore_double"
+                        android:text="@string/transaction_printreceipt_tid"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/transaction_printreceipt_padding_smallest_double"
+                    android:orientation="horizontal"
+                    >
+                    <com.spectratech.lib.view.HKFontTextView
+                        android:id="@+id/val_tid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="right"
+                        android:textColor="@color/transaction_printreceipt_printtext"
+                        android:textSize="@dimen/transaction_printreceipt_textsize_littlemore_double"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:text="@string/transaction_printreceipt_val_default"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--separator-->
+            <include layout="@layout/transaction_printreceipt_divider_wmargin_double" />
+
+
+
+            <!--card type-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/transaction_printreceipt_padding_small_double" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/transaction_printreceipt_margin_small"
+                >
+                <com.spectratech.lib.view.HKFontTextView
+                    android:id="@+id/val_txBig"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="left"
+                    android:textColor="@color/transaction_printreceipt_printtext"
+                    android:textSize="@dimen/transaction_printreceipt_textsize_large_double"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:text="SALE"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:baselineAligned="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:background="#FFFFFF"
+                    android:paddingBottom="1dip"
+                    android:paddingLeft="1dip"
+                    android:paddingTop="1dip" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:background="#000011"
+                        android:gravity="center"
+                        android:paddingRight="3dp"
+                        android:text="@string/name"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.2"
+                    android:background="#FFFFFF"
+                    android:paddingBottom="1dip"
+                    android:paddingLeft="1dip"
+                    android:paddingTop="1dip" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.5"
+                        android:background="#000011"
+                        android:gravity="center"
+                        android:paddingRight="3dp"
+                        android:text="@string/quantity"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.2"
+                    android:background="#FFFFFF"
+                    android:paddingBottom="1dip"
+                    android:paddingLeft="1dip"
+                    android:paddingRight="1dip"
+                    android:paddingTop="1dip" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.75"
+                        android:background="#000011"
+                        android:gravity="center"
+                        android:paddingRight="3dp"
+                        android:textSize="12sp"
+                        android:text="@string/unit_price"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+                </TableRow>
+            </LinearLayout>
+
+            <!--amount-->
+
+            <ListView
+                android:id="@+id/sale_ListPrint1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+
+            <!--tip-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/transaction_printreceipt_padding_smallest_double"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="@dimen/transaction_printreceipt_row_width4_double"
+                    android:layout_height="match_parent"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/transaction_printreceipt_padding_small_double" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/transaction_printreceipt_padding_smallest_double"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="@dimen/transaction_printreceipt_row_width4_double"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <com.spectratech.lib.view.HKFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="left"
+                        android:textColor="@color/transaction_printreceipt_printtext"
+                        android:textSize="@dimen/transaction_printreceipt_textsize_littlemore_double"
+                        android:text="@string/transaction_printreceipt_total"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/transaction_printreceipt_padding_smallest_double"
+                    android:orientation="horizontal"
+                    >
+                    <com.spectratech.lib.view.HKFontTextView
+                        android:id="@+id/val_amount_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="right"
+                        android:textColor="@color/transaction_printreceipt_printtext"
+                        android:textSize="@dimen/transaction_printreceipt_textsize_littlemore_double"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:text="@string/transaction_printreceipt_val_default"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/offline_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/transaction_printreceipt_padding_smallest_double"
+                android:orientation="horizontal"
+                android:gravity="left|center_vertical"
+                android:visibility="gone"
+                >
+                <com.spectratech.lib.view.HKFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/transaction_printreceipt_printtext"
+                    android:textSize="@dimen/transaction_printreceipt_textsize_littlemore_double"
+                    android:text="@string/transaction_printreceipt_offline"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/transaction_printreceipt_padding_large_double" />
+
+            <!--canceled-->
+            <include layout="@layout/transaction_printreceipt_canceled_double" />
+
+            <!--declined-->
+            <include layout="@layout/transaction_printreceipt_declined_double" />
+
+            <!--no signature-->
+            <include layout="@layout/transaction_printreceipt_nosign_double" />
+
+            <LinearLayout
+                android:id="@+id/container_signature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <com.spectratech.lib.view.HKFontTextView
+                        android:layout_width="@dimen/transaction_printreceipt_signature_cross_width_double"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="bottom|right"
+                        android:textColor="@color/transaction_printreceipt_printtext"
+                        android:textSize="@dimen/transaction_printreceipt_textsize_generaladdtwo_double"
+                        android:text="X"
+                        />
+                    <com.spectratech.lib.view.DrawableLinearLayout
+                        android:id="@+id/transaction_printreceipt_signature"
+                        android:layout_width="@dimen/transaction_printreceipt_header5_content_width_double"
+                        android:layout_height="@dimen/transaction_printreceipt_header5_content_height_double"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10px"
+                    android:layout_marginLeft="@dimen/transaction_printreceipt_margin_large_double"
+                    android:layout_marginRight="@dimen/transaction_printreceipt_margin_large_double"
+                    >
+                    <include layout="@layout/transaction_printreceipt_signunderline_double" />
+                </LinearLayout>
+                <com.spectratech.lib.view.HKFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/transaction_printreceipt_printtext"
+                    android:textSize="@dimen/transaction_printreceipt_textsize_generaladdtwo_double"
+                    android:text="@string/transaction_printreceipt_cardholdersign"
+                    />
+                <include layout="@layout/transaction_printreceipt_divider_wmargin_double" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/transaction_printreceipt_padding_small_double" />
+
+            <!--approval code-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <com.spectratech.lib.view.HKFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="left"
+                    android:textColor="@color/transaction_printreceipt_printtext"
+                    android:textSize="@dimen/transaction_printreceipt_textsize_generaladdtwo_double"
+                    android:text="@string/transaction_printreceipt_approvalcode_with_colon"
+                    />
+                <View
+                    android:layout_width="@dimen/transaction_printreceipt_padding_smaller_double"
+                    android:layout_height="match_parent" />
+                <com.spectratech.lib.view.HKFontTextView
+                    android:id="@+id/val_appcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="left"
+                    android:textColor="@color/transaction_printreceipt_printtext"
+                    android:textSize="@dimen/transaction_printreceipt_textsize_generaladdtwo_double"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:text="@string/transaction_printreceipt_val_default"
+                    />
+            </LinearLayout>
+
+            <!--APP-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <com.spectratech.lib.view.HKFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="left"
+                    android:textColor="@color/transaction_printreceipt_printtext"
+                    android:textSize="@dimen/transaction_printreceipt_textsize_generaladdtwo_double"
+                    android:text="@string/transaction_printreceipt_app_with_colon"
+                    />
+                <View
+                    android:layout_width="@dimen/transaction_printreceipt_padding_smaller_double"
+                    android:layout_height="match_parent" />
+                <com.spectratech.lib.view.HKFontTextView
+                    android:id="@+id/val_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="left"
+                    android:textColor="@color/transaction_printreceipt_printtext"
+                    android:textSize="@dimen/transaction_printreceipt_textsize_generaladdtwo_double"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:text=""
+                    />
+            </LinearLayout>
+
+            <!--AID-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <com.spectratech.lib.view.HKFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="left"
+                    android:textColor="@color/transaction_printreceipt_printtext"
+                    android:textSize="@dimen/transaction_printreceipt_textsize_generaladdtwo_double"
+                    android:text="@string/transaction_printreceipt_aid_with_colon"
+                    />
+                <View
+                    android:layout_width="@dimen/transaction_printreceipt_padding_smaller_double"
+                    android:layout_height="match_parent" />
+                <com.spectratech.lib.view.HKFontTextView
+                    android:id="@+id/val_aid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="left"
+                    android:textColor="@color/transaction_printreceipt_printtext"
+                    android:textSize="@dimen/transaction_printreceipt_textsize_generaladdtwo_double"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:text="@string/transaction_printreceipt_val_default"
+                    />
+            </LinearLayout>
+
+            <!--TC-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <com.spectratech.lib.view.HKFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="left"
+                    android:textColor="@color/transaction_printreceipt_printtext"
+                    android:textSize="@dimen/transaction_printreceipt_textsize_generaladdtwo_double"
+                    android:text="@string/transaction_printreceipt_tc_with_colon"
+                    />
+                <View
+                    android:layout_width="@dimen/transaction_printreceipt_padding_smaller_double"
+                    android:layout_height="match_parent" />
+                <com.spectratech.lib.view.HKFontTextView
+                    android:id="@+id/val_tc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="left"
+                    android:textColor="@color/transaction_printreceipt_printtext"
+                    android:textSize="@dimen/transaction_printreceipt_textsize_generaladdtwo_double"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:text="@string/transaction_printreceipt_val_default"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/transaction_printreceipt_padding_large_double" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <com.spectratech.lib.view.HKFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="left"
+                    android:textColor="@color/transaction_printreceipt_printtext"
+                    android:textSize="@dimen/transaction_printreceipt_tailagreement_textsize_double"
+                    android:text="@string/transaction_printreceipt_tail_text"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/transaction_printreceipt_row_height1_double" />
+
+        </LinearLayout>
+    </LinearLayout>
+</com.spectratech.sp530demo.TransactionPrintReceiptLinearLayout>

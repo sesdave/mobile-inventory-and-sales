@@ -1,0 +1,1 @@
+include ':sp530demo', ':bp80mfgtest', ':bp80demo', ':sptunnelapp', ':spectratechlib_ftp', ':spectratechlib_ftpprivate', ':commons-net-3.4', ':com.google.zxing.client.android.captureactivity'

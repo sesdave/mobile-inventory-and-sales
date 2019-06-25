@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_setting"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/btn_setting"
+        android:title="@string/setting"/>
+
+    <item
+        android:id="@+id/menu_transaciton_history"
+        android:orderInCategory="101"
+        android:title="@string/transaction_history"/>
+
+    <item
+        android:id="@+id/menu_qrscan"
+        android:orderInCategory="102"
+        android:icon="@drawable/qr_spectratechweb"
+        android:title="@string/qr_scan"/>
+
+</menu>

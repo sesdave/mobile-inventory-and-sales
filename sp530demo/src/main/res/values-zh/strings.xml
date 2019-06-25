@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome">歡迎 SP530</string>
+
+    <string name="title_printer_gen_img">打印機 - 生成圖像</string>
+
+    <string name="english_en">English (en)</string>
+    <string name="chinese_zh">Chinese (zh)</string>
+
+    <string name="setting_general_title">設定 - 一般</string>
+    <string name="setting_language_title">設定 - 語言</string>
+    <string name="setting_t1000device_title">設定 - T1000 設備</string>
+    <string name="setting_sp530device_title">設定 - SP530 設備</string>
+    <string name="setting_sp530sslcert_title">設定 - SP530 SSL 證書</string>
+    <string name="setting_transaction_title">設定 - 交易</string>
+    <string name="setting_transactionmutuauth_title">設定 - 交易 (相互認證)</string>
+    <string name="setting_bluetoothprinter_title">設定 - 藍牙打印機</string>
+    <string name="setting_bluetoothprinterimage_title">設定 - 藍牙打印機圖像</string>
+    <string name="settings_advancemode">高級模式</string>
+    <string name="settings_btprinter_enable">啟用藍牙打印機</string>
+    <string name="settings_device_alwaysusecrc">總是使用 CRC 校驗</string>
+    <string name="settings_device_sslchannel">啟用 SSL</string>
+    <string name="settings_device_sslchanneltwo">SSL - 邏輯通道二</string>
+    <string name="settings_sendecho_connected">連接後發送回應</string>
+    <string name="settings_trans_simulatetcphost">模擬 TCP 主機\n(對應 RAW 數據包封裝水平)</string>
+    <string name="settings_transui_showmore">顯示更多交易界面</string>
+    <string name="title_activity_webview">網頁</string>
+
+    <string name="clear_cache_before7days_finish">完成清除 -7 日記䤸</string>
+    <string name="clear_cache_finish">完成清除所有記䤸</string>
+
+    <string name="t1000_ipaddress">T1000 IP 地址</string>
+    <string name="t1000_port_wrange">T1000 端口 (範圍: 1025 - 65535)</string>
+    <string name="connection_timeout_second">連接超時 (秒)</string>
+    <string name="p12cert_select_short">p12 證書選擇</string>
+    <string name="ch1_p12cert_select_short">頻道 1, p12 證書選擇</string>
+    <string name="no_p12_file_found">未發現 P12 檔案</string>
+    <string name="cert_pwd_short_wcolon">證書密碼:</string>
+    <string name="ca_client_auth">客戶端驗證</string>
+    <string name="ca_cert_select_short">CA 證書(pem 格式)選擇</string>
+    <string name="no_pem_file_found">未發現 PEM 檔案</string>
+    <string name="extra_tlv">額外 TLV</string>
+    <string name="max_trans_in_batch_mode">批處理模式下的最大交易</string>
+    <string name="btn_init_mode">初始模式</string>
+    <string name="btn_init_auth">初始授權</string>
+    <string name="btn_muth_auth">相互授權</string>
+    <string name="btn_gen_key">生成密鑰</string>
+    <string name="btn_toggle_filelist_controller">切換檔案列表控制器</string>
+    <string name="launch_dl_files">啟動下載檔案</string>
+    <string name="tms_list_file">TMS 列表檔案</string>
+    <string name="dl_tms_files">下載 TMS 檔案</string>
+    <string name="transfer_tms_sp530">傳送 TMS 到 SP530</string>
+    <string name="transfer_data_sp530">傳送數據到 SP530</string>
+    <string name="transfer_file_sp530">傳送檔案到 SP530</string>
+    <string name="result_last_transfer_tms">最後傳送 TMS 結果</string>
+    <string name="tms_file_list">TMS 檔案列表</string>
+    <string name="tms_list_file_notexist_pls_dl_it">TMS 列表檔案不存在,請下載</string>
+    <string name="data_list_file_notexist_pls_dl_it">數據列表檔案不存在,請下載</string>
+    <string name="tms_list_file_empty">TMS 列表檔案是空的</string>
+    <string name="data_list_file_empty">數據列表檔案是空的</string>
+    <string name="data_file_list">數據檔案列表</string>
+    <string name="file_list_url">文件列表網址</string>
+    <string name="no_data_files_in_list">沒有數據檔案在列表中</string>
+    <string name="no_tms_files_in_list">沒有 TMS 檔案在列表中</string>
+    <string name="no_tms_files_in_download_list">沒有 TMS 檔案在列表中</string>
+    <string name="no_data_files_in_download_list">沒有數據檔案在列表中</string>
+    <string name="dl_tmsfiles">下載 TMS 檔案</string>
+    <string name="qr_scan">QR 掃描</string>
+    <string name="transaction_history">交易記錄</string>
+    <string name="start_batch_transactions">開始批處理交易</string>
+    <string name="start_transaction">開始交易</string>
+    <string name="demo_transaction_receipt">示範 - 交易收據</string>
+    <string name="bluetooth_printer_manage">藍牙打印機管理</string>
+    <string name="refresh_bt_io">刷新藍牙 IO</string>
+    <string name="test_printer">測試打印機</string>
+    <string name="connect_ble">連接 BLE</string>
+    <string name="start_mfg_info_print">開始 MFG 信息打印</string>
+    <string name="stop_mfg_info_print">停止 MFG 信息打印</string>
+    <string name="channel_one">第一頻道</string>
+    <string name="channel_two">第二頻道</string>
+    <string name="enable_ssl">啟用 SSL</string>
+    <string name="set_mcp_config">設置 MCP 配置</string>
+    <string name="input_command_hex_wcolon">輸入命令 (HEX):</string>
+    <string name="input_data_hex">輸入數據 (HEX)</string>
+    <string name="s3ins_response_data_from_fngetresponse">S3INS 回應數據 (由功能 getS3INSResponseObject)</string>
+    <string name="please_click_initauth_first">請點擊 \"Init Auth\"</string>
+    <string name="s3template_filelist_url">.ptl 檔案列表網址</string>
+    <string name="s3template_filelist_path">.ptl 檔案列表路徑</string>
+    <string name="frag_device_title">裝置</string>
+    <string name="app_name">Spectra SP530 Demo</string>
+    <string name="s3auth_sptl3authkey_mrmk">MRMK</string>
+    <string name="s3auth_sptl3authkey_rmk">RMK</string>
+    <string name="s3auth_sptl3authkey_title">Spt L3 - AuthKey</string>
+    <string name="s3auth_sptl3internaldata_title">Spt L3 -InternalData</string>
+
+    <string name="settings_btsecurerfcomm_enable">安全的藍牙連接</string>
+</resources>
